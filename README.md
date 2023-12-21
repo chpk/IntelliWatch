@@ -1,4 +1,4 @@
-# TLDW
+# IntelliWatch
 
 ### Project Introduction: 
 Online video platforms contain a massive amount of content, with video lengths ranging from a few minutes to over an hour. However, studies show most viewers prefer videos to be concise, with ideal lengths under 20 minutes and a sweet spot of 3-6 minutes. Despite this preference for brevity, users often struggle to efficiently extract key information from lengthy videos. The long form content challenges people's short attention spans - research indicates our average attention span when consuming digital media has shrunk to just 47 seconds today. Viewers frequently rewind and re-watch segments to try to pick out important details, which increases cognitive load. There is a clear need for solutions that can distill key content from lengthy videos into short, information-dense summaries tailored to users' limited time and attention. Viewers need to grasp key details from videos without spending excessive time watching full videos. Enabling easy access to interact and extract crucial details on demand would greatly enhance the knowledge consumption process when dealing with expansive video content. Tackling these challenges will allow online video platforms to better align with users' preferences for concise and efficient learning. 
@@ -8,19 +8,19 @@ The proposed ‘TL;DW’ application integrates video and audio processing capab
 Through the application's interactive user interface, users can engage with the fine-tuned large language model to ask questions related to the video content. To reduce cognitive load for users, the interface provides options to review previous conversations with the system.
 The core AI techniques powering the video summarization and question answering capabilities are video-frame captioning, audio transcription, and key-frame extraction. By leveraging state-of-the-art large language models, the system can effectively analyze long temporal context from the video and generate abstractive summaries and meaningful insights. This allows for an interactive conversation with the video content rather than passive watching.
 The proposed TL;DW application enables generating concise summaries by extracting key frames, captioning them, and transcribing audio to build a rich contextual database for each video. This context is processed by the large language model to produce succinct summarizations. The conversational interface allows users to efficiently interact with the video content by asking questions and accessing insights from the video context, without needing to watch the full video.
-![Alt text](https://github.com/niknarra/TLDW/blob/main/TLDW%20pipeline.png)
-[Project Live Demo](https://tldwapp2.streamlit.app/)
+![Alt text](https://github.com/niknarra/IntelliWatch/blob/main/IntelliWatch%20pipeline.png)
+[Project Live Demo](https://IntelliWatchapp2.streamlit.app/)
 [Project Demo on YouTube](https://www.youtube.com/watch?v=AZgzeEoIaEM)
 
 ## Running the code in your local environment:
 #### Dependency Installation
 * Make sure you have Python > 3.9
 * Install the dependecies using ``` pip install -r requirements.txt ```
-* Once the dependecies are insstalled, run ```streamlit run .\complete_TLDW_demo_V10.py```
-* The full end-end application is present at [TLDW 2.0](https://tldwapp2.streamlit.app/), the above, ```streamlit run .\complete_TLDW_demo_V10.py``` code is just a reference for other users to build further extensions.
+* Once the dependecies are insstalled, run ```streamlit run .\complete_IntelliWatch_demo_V10.py```
+* The full end-end application is present at [IntelliWatch 2.0](https://IntelliWatchapp2.streamlit.app/), the above, ```streamlit run .\complete_IntelliWatch_demo_V10.py``` code is just a reference for other users to build further extensions.
 
 ## Application Workflow
-* visit [TLDW 2.0](https://tldwapp2.streamlit.app/)
+* visit [IntelliWatch 2.0](https://IntelliWatchapp2.streamlit.app/)
 * sign up if you are a new user
 * once signed up, please login into the application, if wrong password is entered please rfresh the page
 * once logged into the application, a video repository page greets you, please select a video which you like
@@ -28,7 +28,7 @@ The proposed TL;DW application enables generating concise summaries by extractin
 * these keyowrds and prmpts act as a guidance for you to ask questions, you can ask other questions as well
 * in the chat window, ask any question, our applcation responds with an answer, and along with the asnwer you will be provided with a list of timestamps related to the asnwer, click on them to automatically watch the specific parts of the video.  
 
-#### The following is the description of the main python code ```complete_TLDW_demo_V1.py```
+#### The following is the description of the main python code ```complete_IntelliWatch_demo_V1.py```
 1. `streamlit`: This is the main framework used for building the web app. It provides functions to create interactive widgets and to manage the app's state.
 
 2. `langchain` library components:
