@@ -28,9 +28,9 @@ from streamlit_chat import message
 import csv
 # Load CSV data
 st.set_page_config(layout="wide")
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-#st.secrets["OPENAI_API_KEY"]
+#
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 
