@@ -109,7 +109,7 @@ df = load_data()
 
 # Function to display the main page
 def display_main_page():
-    st.title("TL;DW")
+    st.title("IntelliWatch")
     st.subheader("Video Repository")
     category = st.selectbox("Select a category", ["All"] + list(df['category'].unique()))
     filtered_videos = df if category == "All" else df[df['category'] == category]
